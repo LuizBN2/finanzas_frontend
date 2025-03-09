@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  /* Fondo y altura completa de la pantalla */
+  .app-container {
+    background-color: white;
+    min-height: 100vh;
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .banner-img {
+    max-width: 90%; /* Reduce en móviles */
+    height: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .full-height {
+    min-height: 100vh; /* Ocupa el alto completo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
-}
+
+  .loading-spinner {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  @media (max-width: 768px) {
+    .loading-spinner {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  
+  .btn-login {
+    width: auto;
+    max-width: 200px; /* Limita el tamaño en pantallas grandes */
+    min-width: 150px;
+    background-color: #178582;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .btn-login {
+      width: 80%; /* En móviles se hace más ancho */
+      max-width: 250px;
+    }
+  }
+
+  .centered-col {
+    width: 90%;
+    max-width: 600px; /* Controla el ancho en pantallas grandes */
+    text-align: center;
+  }
+  
+  @media (min-width: 576px) { /* sm */
+    .centered-col { width: 80%; }
+  }
+  
+  @media (min-width: 768px) { /* md */
+    .centered-col { width: 60%; }
+  }
+  
+  @media (min-width: 992px) { /* lg */
+    .centered-col { width: 50%; }
+  }
+  
+  @media (min-width: 1200px) { /* xl */
+    .centered-col { width: 40%; }
+  }
+
+  .custom-hr {
+    border: none; /* Elimina el estilo predeterminado */
+    border-top: 2px solid #BFA181; /* Color y grosor de la línea */
+    width: 30%; /* Ajusta el ancho */
+    margin: 1rem auto; /* Centra la línea con margen superior/inferior */
+  }
+  
+  
+
+  
+  
