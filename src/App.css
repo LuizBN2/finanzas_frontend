@@ -40,7 +40,7 @@
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
-    text-align: center;
+    text-align: center;    
   }
   
   @media (max-width: 768px) {
@@ -79,7 +79,56 @@
     margin: 1rem auto; /* Centra la línea con margen superior/inferior */
   }
   
+  .user-info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px; /* Espacio entre elementos */
+    color: #178582; /* Color personalizado */
+}
+
+.custom-container {
+  display: flexbox;
+  justify-content: center; /* Alinea el contenido a la izquierda si es necesario */
+  align-items: center;
+  width: 100vw; /* Asegura que ocupe todo el ancho de la pantalla */
+  min-width: 100%; /* Asegura que no se reduzca dentro de otro contenedor */
+  border-radius: 2px;  
+  padding: 1rem;
+  margin-top: 0.25rem;
+  background-color: #0A1828;
+  padding: 10px 0px 0px 50px; /* Ajusta el espaciado interno */
+}
+
+.btn-logout {
+  width: auto;
+  max-width: 200px; /* Limita el tamaño en pantallas grandes */
+  min-width: 150px;
+  background-color: #178582 !important;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: center;    
+}
+
+@media (max-width: 768px) {
+  .btn-logout {
+    width: 80%; /* En móviles se hace más ancho */
+    max-width: 250px;
+  }
+}
   
+.full-width-header {
+  width: 100vw; /* Ocupa todo el ancho de la pantalla */
+  position: fixed; /* Fija el header en la parte superior */
+  top: 0;
+  left: 0;
+  right: 0; /* Asegura que llegue hasta el borde derecho */
+  z-index: 1000; /* Asegura que esté sobre otros elementos */
+  background-color: #fff; /* Ajusta el color según tu diseño */
+  box-shadow: 0px 4px 6px #178582; /* Agrega sombra opcional */
+  
+}
 
   
   
