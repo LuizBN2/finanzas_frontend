@@ -19,8 +19,8 @@ export const Banner = () => {
                         <img src={imgLogo} alt="" width={200}/> 
                         </Col>
                         <Col md={8} className="centered-col">
-                        <h1  style={{color: "#BFA181"}}>Finanzas Personales</h1>
-                        <h4  style={{color: "#BFA181"}}>Control de ingresos, deudas y gastos</h4>
+                        <h1  style={{color: "#956B2E"}}>&middot; Finanzas Personales &middot;</h1>
+                        <h4  style={{color: "#BFA181"}}>Control de Ingresos, Gastos y Deudas</h4>
                         <hr className="custom-hr w-100"/>
                         <p className="user-info">
                             {user.name}{" "}<Logout/>                            
