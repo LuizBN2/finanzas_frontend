@@ -9,7 +9,7 @@ export const LoginPage = () =>{
     const { loginWithRedirect, isLoading, error } = useAuth0();
     return (
         <div className="app-container" style={{backgroundColor: "#0A1828"}}>
-            <Container fluid className="d-flex justify-content-center align-items-center full-height">
+            <Container className="custom-container">
                 <Row className="justify-content-center w-100">
                     <Col className="centered-col">
                     <img src={imgLogo} alt="" width={200}/>

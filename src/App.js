@@ -17,9 +17,10 @@ function App() {
           </header>
           <Container>
             <Row className='mt-5'>
-              <Col md={6}>
+              <Col md={4}>
               <IngresosList/>              
               </Col>
+              
             </Row>
           </Container>          
           </div>

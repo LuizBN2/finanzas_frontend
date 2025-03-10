@@ -5,6 +5,8 @@
     display: flex; /* Usamos flexbox para centrar el contenido */
     justify-content: center; /* Centrado horizontal */
     align-items: center; /* Centrado vertical */
+    color: #178582;
+    padding: 0px 0px 0px 0px; /* Ajusta el espaciado interno */
   }
 
   .banner-img {
@@ -87,6 +89,13 @@
     color: #178582; /* Color personalizado */
 }
 
+h5.text-info {
+  color:#178582 !important; /* Color personalizado */
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+}
+
 .custom-container {
   display: flexbox;
   justify-content: center; /* Alinea el contenido a la izquierda si es necesario */
@@ -98,6 +107,19 @@
   margin-top: 0.25rem;
   background-color: #0A1828;
   padding: 10px 0px 0px 50px; /* Ajusta el espaciado interno */
+}
+
+.list-container {
+  display: flexbox;
+  justify-content: center; /* Alinea el contenido a la izquierda si es necesario */
+  align-items: center;
+  width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+  min-width: 100%; /* Asegura que no se reduzca dentro de otro contenedor */
+  border-radius: 4px;   
+  margin: 10rem 0rem 0.25rem 0rem;
+  color:#BFA181 !important;
+  background-color:#0A1828 !important;  
+  padding: 0.5rem 0rem 0.5rem 0rem; /* Ajusta el espaciado interno */
 }
 
 .btn-logout {
@@ -130,5 +152,109 @@
   
 }
 
-  
+/* Clase personalizada para la alerta */
+.custom-alert {
+  text-align: center;         /* Centra el texto */
+  background-color:#9E2A2F !important;   /* Rojo cálido como fondo */
+  color: #FFFFFF !important;              /* Texto blanco para buena legibilidad */
+  border-color: #956B2E !important;       /* Borde con el color dorado oscuro */
+  padding: 15px;              /* Espaciado interno para hacerla más legible */
+  border-radius: 5px;         /* Bordes redondeados */
+  font-size: 1.2rem;          /* Tamaño de la fuente */  
+  box-shadow: 0px 4px 6px rgba(246, 245, 245, 0.1); /* Sombra suave */
+  max-width: 90%;              /* Limita el ancho máximo al 80% del contenedor */
+  margin: 0 auto;              /* Centra la alerta horizontalmente */
+}  
+
+/* Estilo con max-width */
+
+
+/* Estilo con max-width */
+.custom-max-width {
+  max-width: 100% !important ;  /* Limitar el ancho al 90% */
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  border: 1px solid #BFA181; /* Puedes ajustar el color del borde */
+  border-radius: 0.25rem; /* Puedes ajustar el radio de los bordes */
+  font-size: 1rem;
+  margin-left: 1rem; 
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.custom-input {
+  max-width: 100% !important ;
+  display: flex !important; /* Establece el contenedor como flexbox */
+  justify-content: flex-start !important; /* Distribuye los elementos con espacio entre ellos */
+  margin: 0.1rem 0.5rem;
+  color:#BFA181 !important;  
+  box-sizing: border-box !important; /* Asegura que el padding y border no afecten el ancho total */
+}
+
+
+.custom-edit {
+  display: flex; /* Establece el contenedor como flexbox */
+  justify-content: left !important; /* Distribuye los elementos con espacio entre ellos */
+  margin: 0;
+  color:#BFA181 !important;
+  border-radius: 0.2rem !important; /* Puedes ajustar el radio de los bordes */
+  background-color:#0e3058 !important;
+  max-width: 100% !important;
+  border: 0.05rem solid #BFA181 !important; /* Puedes ajustar el color del borde */
+}
+
+.cursor-pointer{
+  cursor: pointer !important;
+}
+
+.icon-cancel {
+  color:#9E2A2F;
+  cursor: pointer;
+  transform: scale(1.2);
+  margin-bottom: 0.25rem;
+  margin-right: 0.75rem;
+}
+
+.icon-ok {
+  color:#178582;
+  cursor: pointer;
+  transform: scale(1.2);
+  margin-bottom: 0.25rem;
+  margin-right: 0.5rem;
+}
+
+.icon-edit {
+  color:#BFA181;
+  cursor: pointer;
+  transform: scale(1.2);
+  margin-bottom: 0.25rem;
+  margin-right: 0.5rem;
+}
+
+.icon-del {
+  color:#BFA181;
+  cursor: pointer;
+  transform: scale(1.2);
+  margin-bottom: 0.25rem;
+}
+
+.custom-page {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0.5rem 8rem 0.1rem 8rem;
+  transform: scale(1.2);
+  color: #178582;
+}
+
+.custom-span {
+  transform: scale(1) !important;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none; /* Desactiva la interacción */
+  cursor: not-allowed; /* Cambia el cursor a "no permitido" */
+}
   
